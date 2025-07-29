@@ -4,7 +4,7 @@ Repositori ini berisi kumpulan hasil tugas praktikum dari Modul 1 hingga Modul 7
 
 ## 📚 Daftar Isi
 
-- [Modul 1 - HTML Dasar](./modul-1/)  
+- [Modul 1 - HTML Dasar](./TugasModul1/)  
   Mempelajari struktur dasar HTML, tag-tag penting seperti heading, paragraf, gambar, tautan, dan tabel.
 
 - [Modul 2 - Pengenalan CSS](./modul-2/)  
