@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+</head>
+<body style="background-color:#ff99d359; font-family: Arial, sans-serif; margin: 10px;">
+
+    <!-- Logo Kampus -->
+    <div style="text-align: center;">
+        <img src="logostitek.png" alt="Logo Stitek" width="300" style="margin-bottom: 5px;">
+    </div>
+
+    <!-- Judul -->
+    <h1 style="text-align: center; color:#d2197c;">Formulir Pendaftaran Mahasiswa Baru</h1>
+
+    <!-- Formulir dengan Layout Dua Kolom -->
+    <form action="/submit" method="post" style="background-color: #fd7eb9b4; padding: 20px; border-radius: 10px; max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+        <!-- Data Pribadi -->
+        <fieldset style="grid-column: span 2;">
+            <legend>Data Pribadi</legend>
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required style="width: 100%; padding: 8px;"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com" required style="width: 100%; padding: 8px;"><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="gender" value="Pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="gender" value="Wanita" required style="margin-left: 10px;">
+            <label for="wanita">Wanita</label><br><br>
+
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" placeholder="Alamat lengkap Anda" style="width: 100%; padding: 8px;"></textarea>
+        </fieldset>
+
+        <!-- Hobi -->
+        <fieldset>
+            <legend>Hobi</legend>
+            <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+            <label for="membaca">Membaca</label><br>
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga">Olahraga</label><br>
+            <input type="checkbox" id="memasak" name="hobi" value="Memasak">
+            <label for="musik">Memasak</label>
+        </fieldset>
+
+        <!-- Jurusan -->
+        <fieldset>
+            <legend>Pilihan Jurusan</legend>
+            <label for="jurusan">Pilih Jurusan:</label><br>
+            <select id="jurusan" name="jurusan" required style="width: 100%; padding: 8px;">
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Bisnis Digital">Bisnis Digital</option>
+            </select>
+        </fieldset>
+
+        <!-- Tombol Submit -->
+        <div style="grid-column: span 2; text-align: center;">
+            <button type="submit" style="background-color: #d2197c; color: white; padding: 10px 20px; border: none; cursor: pointer;">Daftar Sekarang</button>
+        </div>
+    </form>
+
+    <!-- Link Informasi Kampus -->
+    <p style="text-align: center; margin-top: 20px;">
+        Info lebih lanjut? Kunjungi <a href="https://www.kampuscontoh.ac.id" target="_blank">Halaman Informasi Kampus</a>.
+    </p>
+
+    <!-- Komentar: Layout dua kolom dengan grid CSS, validasi menggunakan HTML5 -->
+</body>
+</html>
